@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DonutPieChartStyle">
+        <item name="stroke_width">20dp</item>
+        <item name="text_position">0.2</item>
+        <item name="text_color">#FF0000</item>
+    </style>
+</resources>

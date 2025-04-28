@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DonutPieChart">
+        <attr name="stroke_width" format="dimension" />
+        <attr name="text_position" format="float" />
+        <attr name="text_color" format="color" />
+    </declare-styleable>
+
+    <attr name="donut_pie_chart_style" format="reference" />
+</resources>

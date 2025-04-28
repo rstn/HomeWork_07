@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/DonutPieChartFragment">
+
+    <fragment
+        android:id="@+id/DonutPieChartFragment"
+        android:name="otus.homework.customview.DonutPieChartFragment"
+        android:label="@string/pie_chart_fragment_label"
+        tools:layout="@layout/fragment_donut_pie_chart">
+
+        <action
+            android:id="@+id/action_donut_pie_chart_to_line_chart"
+            app:destination="@id/LineChartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LineChartFragment"
+        android:name="otus.homework.customview.LineChartFragment"
+        android:label="@string/line_chart_fragment_label"
+        tools:layout="@layout/fragment_line_chart">
+        <argument
+            android:name="chartId"
+            app:argType="string" />
+        <argument
+            android:name="segmentIndex"
+            app:argType="integer" />
+        <argument
+            android:name="segmentValue"
+            app:argType="float" />
+        <action
+            android:id="@+id/action_line_chart_to_donut_pie_chart"
+            app:destination="@id/DonutPieChartFragment" />
+    </fragment>
+</navigation>
